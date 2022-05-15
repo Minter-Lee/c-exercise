@@ -172,7 +172,7 @@ void removeMinItem()
     *(p + j - 1) = *(p + j);
   }
 
-  // 注意删除了一个，所以少输出一次,C语言只能覆盖没有释放控件的能力（直接delete能力）
+  // 注意删除了一个，所以少输出一次,C语言只能覆盖没有释放空间的能力（直接delete能力）
   for (int j = 0; j < i - 1; j++)
   {
     printf("array[%d] = %d \n", j, *(p + j));
@@ -298,7 +298,7 @@ int main()
   // addOne(array);
   // removeMinItem();
   // twoDArray();
-  // twoDArrayPoint();
+  // twoDA rrayPoint();
   // fun6Main();
   pointArray();
   return 0;
